@@ -13,7 +13,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 p, ul, ol, table, pre, dl {
-  margin:0 0 40px;
+  margin:0 0 20px;
+}
+
+#cboxLoadedContent p:last-child, ul:last-child, ol:last-child, table:last-child, pre:last-child, dl:last-child, h3 {
+  margin-bottom: 40px;
 }
 
 h1, h2, h3 {
