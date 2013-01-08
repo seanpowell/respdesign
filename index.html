@@ -6,6 +6,7 @@
     <title>Responsive Design by seanpowell</title>
 
     <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="colorbox.css">
     <link rel="stylesheet" href="stylesheets/pygment_trac.css">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <!--[if lt IE 9]>
@@ -15,55 +16,251 @@
   <body>
     <div class="wrapper">
       <header>
-        <h1>Responsive design and marketers</h1>
-        <p>Responsive Design Presentation for the Professors Insitute</p>
+        <h1>Responsive and mobile design</h1>
+        <p>Mobile Presentation for the Professors Insitute</p>
+        <p>January 8, 2013</p>
+      </header>
+      <section>
+        <article>
+          <div class="slide">
+        <h3>What we're going to cover (and what we're not)</h3>
+      </div>
+<div class="slide">
+<p>We will cover a few new(er) topics around mobile marketing and mobile development - namely responsive design and mobile specific design.  Including along the way key concepts for working within these mobile strategies and how it applies to marketers and marketing students. We'll also compare and contrast those approaches and weigh pros and cons to each.</p>
+<p>We'll stop short of going into when to build web applications and other subconcepts to responsive design but will touch on these topics at a high level.</p>
+</div>
+<!-- <div class="slide">
+<p>DELETE As we dive deeper into each topic you'll probably notice that there are a number of tangents to go off on, all deserving of time, but not all can be covered today - such as: when to build your own application, mobile first design and it's dirivatives, and deep dives into the technical aspects (though we will talk it at a high level).</p>
+</div> -->
+<div class="slide">
+<p>After we're done, we'll be able to answer these questions:</p>
+<ul>
+  <li>What are the technical aspects of mobile development as it relates to marketers (hopefully without too much jargon)?</li>
+  <li>Where and how those concepts are being used (show and tell)?</li>
+  <li>Why one strategy is better than another (caveat alert: in specific situations)?</li>
+  <li>How do these strategies work with email (if at all)?</li>
+</ul>
+</div>
+</article>
+<p><hr></p>
+<article>
+<div class="slide">
+<h3>A quick agenda...</h3>
+</div>
+<div class="slide">
+<ul>
+  <li>Responsive design</li>
+  <li>Mobile specific design</li>
+  <li>Moble email design</li>
+</ul>
+</div>
+</article>
+<p><hr></p>
+<article>
+<div class="slide">
+<h3>Responsive Design is</h3>
+</div>
+<div class="slide">
+<p>
+  Responsive web design is an approach to web development and design where the website adapts to the user environment&#39;s screen size, device, and orientation. &nbsp;This is typically done through a combination of flexible grid patterns, images, and css media queries. </p>
+</div>
+<div class="slide">
+  <p>In this approach, the actual site location never changes, e.g. to a mobile specific version, just adjusts in real time as the screen size changes. </p>
+    <p>A tell tale sign of a responsively implemented web site is if you adjust your browser screen the website adjusts intelligently - keeping balance and aspect through any browser (re)size.</p>
+</div>
+<div class="slide">
+<img src="Media Queries.png" />
+</div>
+<div class="slide">
+<img src="Media-Queries-3.png" />
+</div>
+<div class="slide">
+<img src="Media-Queries-4.png" />
+</div>
+<div class="slide">
+<p>
+  Upside</p>
+<ul>
+  <li>
+    One design that &quot;responds&quot; to different screen sizes. Similar experience for all users.</li>
+  <li>
+    Lower time/cost to implement versus multiple separate builds for mobile, tablet, etc.</li>
+  <li>
+    Keeping multiple devices in mind during development generally results in a clearer, simpler layout.</li>
+  <li>
+    SEO: All links and reputation mesurement goes back to one site which is helps improve results of search engine optimization and marketing.</li>
+  <li>Easier to track through analytics.</li>
+  <li>Content publishing is {slightly} simplified.</p>
+</ul>
+</div>
+<div class="slide">
+<p>
+  Downside</p>
+<ul>
+  <li>
+    One design sometimes just can&#39;t be perfect for all scenarios.</li>
+  <li>
+    Displays at the smallest level generally take a performance hit.</li>
+    <li>SEO: Because you are using the same content, it's harder to adjust content/copy for mobile specific searching.</li>
+</ul>
+</div>
+</article>
 
-        <p class="view"><a href="https://github.com/seanpowell/respdesign">View the Project on GitHub <small>seanpowell/respdesign</small></a></p>
+<p><hr></p>
+
+<article>
+<div class="slide">
+<h3>Mobile specific design</h3>
+</div>
+<div class="slide">
+<p>Mobile design is building specifically for the small screen.  This approach builds a unique experience for mobile (smartphone) users and possibly tablets.  The hallmarks of a mobile design are lightweight elements, scant of (heavy or large)
+imagery, and optimization for simple navigation.  Generally speaking, choices are presented to the user in smaller
+numbers, representing the sometimes very different purpose of mobile traffic. A separate site, and in most cases code base, is created and maintained from the main website or application.  </p>
+</div>
+<div class="slide">
+<img src="mlb-mobile.png" width="32%" />
+<img src="pj-mobile.png" width="32%" />
+<img src="rei-mobile.png" width="32%" />
+</div>
+<div class="slide">
+<p>Upside</p>
+<ul>
+  <li>
+    Design that is specific to your audience and your audience needs.</li>
+  <li>
+    Optimized for bandwidth constraints of mobile users.</li>
+</ul>
+</div>
+<div class="slide">
+<p>Downside</p>
+<ul>
+  <li>
+    Generally implemented on a separate domain or at least a separate page therefore diluting page rank and overall seo (to a certain extent).</li>
+  <li>
+    Costs associated with developing a corresponding website to your desktop website.</li>
+</ul>
+<p>
+  <cite>Note: This is not to be confused with &quot;Mobile First&quot; design which is an approach to your overall site design where the mobile phone leads as your first design and you build up from there. &nbsp;</cite></p>
+</div>
+</article>
+<p><hr></p>
+<article>
+<div class="slide">
+  <h3>A little compare/contrast battle royale...</h3>
+</div>
+<div class="slide">
+  <p>During the 2012 Presidential race each candidate picked a different design approach for their web presence. That's good for us because it turned out to be a really convenient way to showcase the differences between the two (approaches not candidates ;).Smashing Magazine put together a really nice comparison <a href="http://mobile.smashingmagazine.com/2012/08/22/separate-mobile-responsive-website-presidential-smackdown/">on their blog here</a>.</p>
+</div>
+<div class="slide">
+<p style="text-align:center; height: 100%;"><img src="obama-mitt-sites.png" /></p>
+</div>
+<div class="slide">
+<p style="text-align:center;height: 100%;"><img src="content_cut-page.jpg" /></p>
+</div>
+</article>
+<p><hr></p>
+<article>
+<div class="slide">
+<h3>Email and mobile design</h3>
+</div>
+<div class="slide">
+</div>
+<div class="slide">
+<p>While your flexibility is limited there are still ways to employ responsive like tactics to target mobile devices in email.  By understanding a few simple concepts, marketers can tweak their email marketing to function optimally on a mobile phone while keeping the desktop experience unchanged.</p>
+</div>
+<div class="slide">
+<blockquote>
+<p>"Why optimize your email for mobile? If you send email newsletters, it's likely that a growing percentage of your subscribers are reading your messages on an iPhone, tablet or similar. When we last surveyed email client popularity in 2011, we found that almost 20% of email opens occurred on a mobile device, rising dramatically from a mere 4% of the market when we last ran the numbers in 2009. iOS devices accounted for over 90% of these reported opens." - <i>Campaign Monitor's Resposive Email Design Guide (http://www.campaignmonitor.com/guides/mobile/)</i></p>
+</blockquote>
+</div>
+<div class="slide">
+<p style="text-align:center;"><img src="resp-email1.png" /></p>
+</div>
+<div class="slide">
+<p style="text-align:center;"><img src="resp-email2.png" /></p>
+</div>
+<div class="slide">
+<p style="text-align:center;"><img src="resp-email3.png" /></p>
+</div>
+<div class="slide">
+<p>Upside</p>
+<ul>
+  <li>
+    Call to actions and other items are generally better placed.</li>
+  <li>
+    Generally results in a simpler, one column design that works well in email.</li>
+</ul>
+</div>
+<div class="slide">
+<p>Downside</p>
+<ul>
+  <li>
+    More expensive, time wise, to implement.</li>
+</ul>
+</div>
+</article>
+<p><hr></p>
+<article>
+  <div class="slide">
+  <h3>A quick note about content and strategic considerations</h3>
+  </div>
+  <div class="slide">
+  <blockquote><p>When we talk about how to create products and services for mobile, the conversation tends to focus on design and development challenges. How does our design aesthetic change when we’re dealing with a smaller (or higher-resolution) screen? How do we employ (and teach) new gestural interactions that take advantage of touchscreen capabilities? How (and who) will write the code for all these different platforms—and how will we maintain all of them?</p>
+  <p>Great questions, every one. But focusing just on the design and development questions leaves out one important subject: how are we going to get our content to render appropriately on mobile devices? - <i>Content Strategy for Mobile by Karen McGrane</i></p>
+  </blockquote>
+  </div>
+  <div class="slide">
+  </div>
+</article>
+
+<p><hr></p>
+<article>
+<h3>Authors and Contributors</h3>
+
+<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
+
+<h3>Citations and helpful sites</h3>
+
+<ul>
+  <li>Mobile examples: http://www.mobileawesomeness.com/</li>
+  <li>Responsive email examples: http://mediaqueri.es/</li>
+  <li>Responsive email examples: http://blog.lyris.com/us/email-inspiration-six-great-responsive-email-designs/</li>
+  <li>Separate Mobile Website Vs. Responsive Website: http://mobile.smashingmagazine.com/2012/08/22/separate-mobile-responsive-website-presidential-smackdown/</li>
+  <li></li>
+  <li></li>
+  <li></li>
+</ul>
+
+<!-- Contact info here -->
+</article>
+      </section>
+      <footer>
+        <p>This project is maintained by <a href="https://github.com/seanpowell">seanpowell</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+        <!-- <p class="view"><a href="https://github.com/seanpowell/respdesign">View the Project on GitHub <small>seanpowell/respdesign</small></a></p>
 
 
         <ul>
           <li><a href="https://github.com/seanpowell/respdesign/zipball/master">Download <strong>ZIP File</strong></a></li>
           <li><a href="https://github.com/seanpowell/respdesign/tarball/master">Download <strong>TAR Ball</strong></a></li>
           <li><a href="https://github.com/seanpowell/respdesign">View On <strong>GitHub</strong></a></li>
-        </ul>
-      </header>
-      <section>
-        <h3>What we're going to cover (and what we're not)</h3>
-
-<p>We will cover what responsive design is, it's many forms and alternative concepts, and how it applies to marketers and marketing students.  As we dive deeper into the topic you will see that there are a number of tangents to go off on, all deserving of time, but not all can be covered today - such as: when to build your own application, mobile first design, and deep dives into the technical aspects (though we will talk it at a high level).</p>
-
-<p>After we're done, we'll have gone over the following:</p>
-<ul>
-  <li>What does responsive design mean</li>
-  <li>Where and how it's used</li>
-  <li>Why you should care (or not)</li>
-</ul>
-
-
-<h3>What is Responsive Design</h3>
-
-<p>Responsive design is a design strategy of rendering content dependent upon the user's resolution, media, and/or aspect. It derives from "responsive architecture" and how physical space can adjust on the fly to the number of people occupying it.<cite>1</cite> Responsive design is typically achieved through a combination of content strategy and technical considerations like css media queries, flexible layouts, and image manipluation.</p>
-
-<img src="Media Queries.png" />
-
-<h3>Rather Drive Stick?</h3>
-
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
-
-<h3>Authors and Contributors</h3>
-
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
-
-<h3>Support or Contact</h3>
-
-<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
-      </section>
-      <footer>
-        <p>This project is maintained by <a href="https://github.com/seanpowell">seanpowell</a></p>
-        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+        </ul> -->
       </footer>
     </div>
     <script src="javascripts/scale.fix.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script src="javascripts/jquery.colorbox.js"></script>
+    <script>
+      $(document).ready(function() {
+        $('div.slide').each(function() {
+            $(this).colorbox({
+                html: $(this).html(),
+                rel: 'group_1',
+                width: "50%"
+            });
+        });
+      });
+    </script>
 
   </body>
 </html>
